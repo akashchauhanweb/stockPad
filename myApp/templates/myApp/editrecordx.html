@@ -1,0 +1,9 @@
+{% extends 'myApp/editrecord.html' %}
+{% block content %}
+<span>Your record has been modified. You are now being redirected.</span>
+<script>
+    setTimeout(function(){
+    window.location.href = "{% url 'companies' %}";
+    }, 3000);
+</script>
+{% endblock content %}

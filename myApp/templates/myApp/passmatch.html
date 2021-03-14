@@ -1,0 +1,9 @@
+{% extends 'myApp/register.html' %}
+{% block content %}
+<span>Registration Successful. You can now login.</span>
+<script>
+    setTimeout(function(){
+    window.location.href = "{% url 'login' %}";
+    }, 3000);
+</script>
+{% endblock content%}

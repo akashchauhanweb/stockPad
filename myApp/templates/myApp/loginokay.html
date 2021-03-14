@@ -1,0 +1,9 @@
+{% extends 'myApp/login.html' %}
+{% block content %}
+<span>Login Successful. You are being redirected.</span>
+<script>
+    setTimeout(function(){
+    window.location.href = "{% url 'admin' %}";
+    }, 3000);
+</script>
+{% endblock content%}
